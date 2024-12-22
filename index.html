@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio On FM11 App</title>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="bot-widget.css">
+    <link rel="icon" href="imagenes/fevicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Asegúrate de que los enlaces no tengan subrayado */
+        .item a {
+            text-decoration: none;
+            color: inherit; /* Mantiene el color del texto original si es necesario */
+        }
+
+        /* Si necesitas ajustar el color del texto dentro de los enlaces */
+        .item a p {
+            color: inherit; /* O ajusta el color según tu diseño */
+        }
+
+        /* Estilo para los botones de categoría */
+        .category-button {
+            background-color: purple; /* Color púrpura para los botones */
+            color: white; /* Color del texto en blanco */
+            border: none; /* Sin borde */
+            padding: 20px 30px; /* Espaciado */
+            cursor: pointer; /* Cambiar cursor al pasar el ratón */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 16px; /* Tamaño de fuente */
+        }
+
+        /* Efecto al pasar el ratón sobre los botones */
+        .category-button:hover {
+            background-color: darkred; /* Color más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pantalla Principal -->
+    <section id="main-screen" class="screen active animate-on-scroll">
+        <div class="background" style="background-image: url('imagenes/principal.png');"></div>
+        <div class="content">
+            <h1 id="welcome-text">Download Radio On FM11 App</h1>
+            <div class="categories">                                                            
+                <button id="external-link-button" class="category-button">Radio On FM11 App</button>
+                <button id="external-link-button1" class="category-button">Radio On FM Español App</button>
+            </div>
+        </div>
+    </section>    
+
+    <script src="scripts.js"></script>
+    <script src="bot-widget.js" defer></script>
+    <script src="scroll-animation.js"></script>
+</body>
+</html>
